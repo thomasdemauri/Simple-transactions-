@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: #f2e9e9;
+}
+
+header {
+    height: 80px;
+    background-color: #fdf6f6;
+    box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.250);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+main {
+    margin: auto;
+    max-width: 1024px;
+    min-height: calc(100% - 90px - 100px);
+    font-size: 1.5rem;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+#inputTransactions {
+    padding: 20px 30px;
+    background-color: #fdf6f6;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.250);
+    border-radius: 10px;
+}
+
+input {
+    height: 35px;
+    font-size: 1.2rem;
+    padding-left: 5px;
+}
+
+#inputIncomes, #inputExpenses {
+    width: 20px;
+    height: 20px;
+}
+
+#inputTitle {
+    width: 300px;
+}
+
+.buttonAdd {
+    font-size: 1.1rem;
+    padding: 6px 12px;
+    border: none;
+    background-color: #167a16;
+    color: white;
+    font-weight: 700;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#elementBalance {
+    padding: 20px 40px;
+    background-color: #fdf6f6;
+    text-align: right;
+    box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.250);
+    border-radius: 10px;
+}
+
+table {
+    min-width: 100%;
+    box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.250);
+    border-radius: 10px;
+    background-color: #fdf6f6;
+    padding: 10px;
+    border: none;
+}
+
+tr {
+    text-align: center;
+}
+
+td {
+    padding: 2px 0;
+}
+
+.btnRemove {
+    padding: 6px 12px;
+    border: none;
+    background-color: #8a0000;
+    color: white;
+    font-weight: 700;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.expenses {
+    padding: 2px 4px;
+    background-color: #8a0000;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.500);
+}
+
+.incomes {
+    padding: 2px 4px;
+    background-color: #167a16;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.500);
+}
+
+.positive {
+    color: #167a16;
+
+}
+.negative {
+    color: #8a0000;
+}
+
+footer {
+    height: 60px;
+    background-color: #fdf6f6;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}

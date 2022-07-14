@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extrato Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Your.Transactions</h1>
+    </header>
+    <main>
+        <section id="inputTransactions">
+            <input type="radio" name="type" id="inputIncomes" value="incomes">
+            <label for="inputIncomes">Incomes</label>
+            <input type="radio" name="type" id="inputExpenses" value="expenses">
+            <label for="inputExpenses">Expenses</label>
+            <label for="inputTitle">Title</label>
+            <input type="text" id="inputTitle">
+            <label for="inputAmount">Amount</label>
+            <input type="number" name="amount" id="inputAmount">
+            <button type="button" class="buttonAdd">Add</button> 
+        </section>
+
+        <h2 id="elementBalance"></h2>
+
+        <section class="renderTransactions">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoy</th>
+                        <th>Title</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Thomas Mauro</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
